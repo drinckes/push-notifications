@@ -31,6 +31,8 @@ navigator.serviceWorker.register('./service-worker.js').then((registration) => {
  */
 messaging.onMessage((msg) => {
   console.log('web page received foreground firebase message', msg)
+  // Decode the base64 encoded body.
+  msg.data.body = atob(msg.data.body);
   displayMessage(msg);
   const title = msg.data.title;
   const options = {
@@ -54,7 +56,8 @@ function displayMessage(msg) {
   body.textContent = msg.data.body;
   const note = document.createElement('div');
   note.classList = 'message-metadata';
-  note.textContent = msg.data.id + ', ' + msg.data.timestamp;
+  const d = new Date(msg.data.timestamp * 1000);
+  note.textContent = 'ID:' + msg.data.id + ', created at ' + d.toISOString();
   mdiv.appendChild(title);
   mdiv.appendChild(body);
   mdiv.appendChild(note);
