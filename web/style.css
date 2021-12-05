@@ -1,0 +1,26 @@
+/* Styles for Firebase message demo. */
+
+h2 {
+  margin: 0px;
+}
+
+.message-container {
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin: 20px 20px 0 20px;
+  padding: 16px;
+  width: 320px;
+}
+
+.token-container {
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin: 20px 20px 0 20px;
+  overflow-wrap: break-word;
+  padding: 16px;
+  width: 320px;
+}
+
+.token-title {
+  font-size:75%;
+}
