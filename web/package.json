@@ -1,0 +1,14 @@
+{
+  "standard": {
+    "globals": [
+      "BroadcastChannel",
+      "firebase",
+      "idb",
+      "atob",
+      "messageModule",
+      "importScripts",
+      "self",
+      "clients"
+    ]
+  }
+}

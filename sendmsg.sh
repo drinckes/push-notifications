@@ -74,8 +74,8 @@ done
 shift $((OPTIND - 1))
 # Set the title.
 title="Boop"
-if [[ ! -z "$@" ]]; then
-  title="$@"
+if [[ -n "$*" ]]; then
+  title="$*"
 fi
 
 # If we didn't set the server key and message token with arguments, read them

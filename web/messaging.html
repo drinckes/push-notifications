@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
   <title>Firebase Messaging Demo</title>
-  <meta charset='utf-8'>
-  <script src='https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js'></script>
-  <script src='https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js'></script>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Roboto:wght@100&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class='token-container'>
-    <div id='token-title'>Message token for bash script</div>
-    <div id='token'></div>
+  <div class="token-container">
+    <div class="token-title">Message token for bash script</div>
+    <div id="token"></div>
   </div>
-  <div id='token'></div>
-  <div id='messages'></div>
-  <script src='project-config.js'></script>
-  <script src='init-firebase.js'></script>
-  <script src='webpage.js'></script>
+  <div id="messages"></div>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script>
+  <script src="project-config.js"></script>
+  <script src="init-firebase.js"></script>
+  <script src="webpage.js"></script>
 </body>
 </html>
