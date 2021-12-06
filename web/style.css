@@ -1,7 +1,8 @@
 /* Styles for Firebase message demo. */
 
-html, body {
-  font-family: 'Roboto', sans-serif;;
+html,
+body {
+  font-family: Roboto, sans-serif;
 }
 
 h2 {
@@ -16,8 +17,9 @@ h2 {
   width: 640px;
 }
 
-#token, .message-body {
-  font-family: 'Inconsolata', monospace;
+#token,
+.message-body {
+  font-family: Inconsolata, monospace;
 }
 
 .token-container {
@@ -29,7 +31,8 @@ h2 {
   width: 640px;
 }
 
-.message-metadata, .token-title {
+.message-metadata,
+.token-title {
   font-size: 75%;
 }
 
