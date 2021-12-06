@@ -67,3 +67,8 @@ Run:
 ```
 
 You should get a browser notification!
+
+## Code
+
+Code is checked using the [superlinter](https://github.com/github/super-linter)
+GitHub action, and formatted using [standard](https://standardjs.com/).
