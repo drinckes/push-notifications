@@ -6,7 +6,6 @@ importScripts('https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js')
 importScripts('https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js')
 importScripts('https://cdn.jsdelivr.net/npm/idb@7/build/umd.js')
 importScripts('project-config.js')
-importScripts('init-firebase.js')
 
 /**
  * onBackgroundMessage receives Firebase messages.
